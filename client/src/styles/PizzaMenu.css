@@ -1,0 +1,172 @@
+/* Conteneur principal */
+.pizza-menu-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px;
+  font-family: 'Arial', sans-serif;
+  animation: fadeIn 1s ease-out;
+  background: linear-gradient(135deg, #FFEFBA, #FFFFFF); /* Doux dégradé pastel */
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+  animation: slideIn 1s ease-out;
+}
+
+/* Animation pour les catégories de pizzas */
+.pizza-category {
+  margin-bottom: 50px;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.pizza-category h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #FB8C00;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Items de pizza */
+.pizza-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transform: scale(0.95);
+  opacity: 0;
+  animation: scaleUp 0.6s ease-out forwards;
+}
+
+.pizza-item img {
+  max-width: 200px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.pizza-item img:hover {
+  transform: scale(1.1);
+}
+
+.pizza-item h4 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.pizza-item p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+/* Sélecteur de taille */
+.size-selector {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.size-selector label {
+  font-size: 1rem;
+  color: #333;
+  margin-right: 10px;
+}
+
+.size-selector select {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+.size-selector select:hover {
+  border-color: #FB8C00;
+}
+
+/* Bouton "Commander" */
+.order-button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #FB8C00;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-button:hover {
+  background-color: #F57C00;
+  transform: translateY(-5px);
+}
+
+.order-button:active {
+  background-color: #E65100;
+  transform: translateY(0);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

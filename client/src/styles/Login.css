@@ -1,0 +1,87 @@
+/* login.css */
+.login-page {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.8); /* Fond transparent */
+  padding: 40px; /* Augmenter le padding */
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Augmenter l'ombre */
+  width: 450px; /* Augmenter la largeur */
+  text-align: center;
+  margin-left: 30px; /* Décaler légèrement vers la droite */
+  margin-right: 30px; /* Ajouter un peu de marge à droite pour plus de décalage */
+}
+
+.login-title {
+  font-size: 2.5rem; /* Augmenter la taille du titre */
+  margin-bottom: 30px; /* Espacement plus grand */
+  color: #333;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 15px; /* Augmenter le padding */
+  margin: 15px 0; /* Espacement plus grand */
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.2rem; /* Augmenter la taille du texte dans les champs */
+}
+
+.login-button {
+  width: 100%;
+  padding: 15px; /* Augmenter le padding du bouton */
+  background-color: #007bff; /* Remplacement de #FB8C00 par #007bff (bleu) */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem; /* Augmenter la taille de la police */
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #0056b3; /* Une nuance plus foncée de bleu pour l'effet hover */
+}
+
+.social-login {
+  margin-top: 30px; /* Augmenter l'espacement supérieur */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* Espacement plus grand entre les icônes */
+}
+
+.social-icon {
+  cursor: pointer;
+}
+
+.social-icon a {
+  color: inherit;
+  font-size: 1.5rem; /* Augmenter la taille des icônes sociales */
+}
+
+.signup-link {
+  margin-top: 30px; /* Augmenter l'espacement */
+}
+
+.signup-link p {
+  font-size: 1.2rem; /* Augmenter la taille du texte du lien */
+}
+
+.signup-link a {
+  color: #007bff; /* Remplacer également le bleu pour le lien */
+  text-decoration: none;
+  font-size: 1.2rem; /* Augmenter la taille du lien */
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}

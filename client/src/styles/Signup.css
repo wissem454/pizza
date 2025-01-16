@@ -1,0 +1,93 @@
+.signup-page {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  text-align: center;
+}
+
+.signup-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.signup-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.signup-button:hover {
+  background-color: #0056b3;
+}
+
+.social-login {
+  margin-top: 30px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.social-icons img {
+  width: 50px; /* Taille augmentée */
+  height: 50px; /* Garde les proportions */
+  cursor: pointer;
+}
+
+.signup-container img {
+  width: 150px; /* Augmenter la taille des images principales */
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+.social-icon a {
+  color: inherit;
+  font-size: 1.5rem;
+}
+
+.signup-link {
+  margin-top: 30px;
+}
+
+.signup-link p {
+  font-size: 1.2rem;
+}
+
+.signup-link a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
